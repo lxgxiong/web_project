@@ -1,0 +1,54 @@
+
+<h1 class="col-sm-offset-5"><%= title%></h1>
+<div class="page-header">
+</div>
+<div class="container">
+	<div class="col-md-12 ">
+		<div class="col-sm-offset-4">
+			<form action="/post" method="post">
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Date</label>
+				<input name="date" type="date" aria-describedby="datedesc">
+				<span id="datedesc" class="col-sm-offset-2 help-block">The Date that this match happened.</span>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Red Team</label>
+				<input name="red" type="text" placeholder="Red Team" aria-describedby="reddesc">
+				<span id="reddesc" class="col-sm-offset-2 help-block">The red team that attended this match.</span>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Blue Team</label>
+				<input name="blue" type="text" placeholder="Blue Team" aria-describedby="bluedesc">
+				<span id="bluedesc" class="col-sm-offset-2 help-block">The blue team that attended this match.</span>
+			</div>
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Red KDA</label>
+				<input name="redkda" type="text" placeholder="Red KDA" aria-describedby="redkdadesc">
+				<span id="redkdadesc" class="col-sm-offset-2 help-block">The red team's  KDA of this match.</span>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Blue KDA</label>
+				<input name="bluekda" type="text"  placeholder="Blue Team" aria-describedby="bluekdadesc">
+				<span id="bluekdadesc" class="col-sm-offset-2 help-block">The blue team's  KDA of this match.</span>
+			
+			</div>
+			
+			<div class="form-group">
+				<label class="col-sm-2 control-label">Duration</label>
+				<input name="duration" type="text"  placeholder="Duration" aria-describedby="durationdesc">
+				<span id="durationdesc" class="col-sm-offset-2 help-block">The duration of this match.</span>
+			</div>
+			<div class="form-group">
+			    <div class="col-sm-offset-1 col-sm-10">
+      				<button type="reset" class="btn btn-primary">Reset</button>
+      				<button type="submit" class="btn btn-primary">Post</button>
+    			</div>
+  			</div>
+  			
+			</form>
+		</div>
+
+	</div>
+</div><!-- End Container -->

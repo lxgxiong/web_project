@@ -1,0 +1,37 @@
+
+<h1 class="col-sm-offset-5"><%= title%></h1>
+<div class="page-header">
+</div>
+<div class="container">
+	<div class="col-md-12 ">
+		<div>
+		
+		
+		<table class="table table-striped table-bordered">
+			<tr>
+				<td>Date</td>
+				<td>Red Team</td>
+				<td>Blue Team</td>
+				<td>Red KDA</td>
+				<td>Blue KDA</td>
+				<td>Duration</td>
+				<td>Action</td>
+			</tr>
+			<% for(var i=0; i<data.length; i++){
+				var date = new Date(data[i].date);
+				var dateFormat = date.getDay()+"/"+date.getMonth()+"/"+date.getFullYear();
+			%>
+				<tr>
+					<td><%=dateFormat%></td>
+					<td><%=data[i].red%></td>
+					<td><%=data[i].blue%></td>
+					<td><%=data[i].redkda%></td>
+					<td><%=data[i].bluekda%></td>
+					<td><%=data[i].duration%></td>
+					<td><button class="btn btn-primary" onclick="deleteRecord('<%=data[i].id%>')">Delete</button></td>
+				</tr>
+			<%}%>
+		</table>
+		</div>
+	</div>
+</div><!-- End Container -->

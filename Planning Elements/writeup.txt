@@ -1,0 +1,6 @@
+Target Users:
+My target users are League of Legends fans. 
+
+Website strategy:
+This website allows them to keep a small database to store the matches history they like, they can post a match, list all matches, and remove matches. 
+
